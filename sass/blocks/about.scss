@@ -1,0 +1,242 @@
+.about {
+
+  .about__wrap {
+    padding: 50px 0;
+  }
+
+  .about__top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__welcome {
+    flex-basis: 50%;
+
+    h1 {
+      font-size: px-to-rem(36px);
+      font-weight: 500;
+      padding-left: 100px;
+      line-height: 42px;
+      position: relative;
+      font-family: 'Raleway';
+      margin: 0;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 100%;
+        display: block;
+        background-color: $primary;
+        position: absolute;
+        left: 50px;
+      }
+    }
+  }
+
+  .about__text {
+    flex-basis: 50%;
+
+    p {
+      padding-top: 5px;
+      color: $textColor;
+      margin: 0;
+      text-align: justify;
+      line-height: 32px;
+      padding-bottom: 25px;
+    }
+
+    button {
+      background-color: $navbarBg;
+      color: $white;
+      border: 0;
+      padding: 12px 50px;
+      font-weight: 700;
+      cursor: pointer;
+      transition-property: box-shadow;
+      transition-duration: 500ms;
+
+      &:hover {
+        box-shadow: 5px 5px 1px $primary;
+      }
+      
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .about__addtext {
+    padding-left: 50px;
+    display: none;
+
+    p {
+      color: $textColor;
+      margin: 0;
+      text-align: justify;
+      line-height: 32px;
+      padding-bottom: 25px;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    button {
+      background-color: $navbarBg;
+      color: $white;
+      border: 0;
+      padding: 12px 50px;
+      font-weight: 700;
+      cursor: pointer;
+      transition-property: box-shadow;
+      transition-duration: 500ms;
+
+      &:hover {
+        box-shadow: 5px 5px 1px $primary;
+      }
+      
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .about__video-wrap {
+    width: 75%;
+    margin: 50px auto;
+  }
+
+  .about__video {
+    @include adaptive-video();
+  }
+
+  .about__video-wrap-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .about {
+
+    .about__wrap {
+      padding: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+
+    .about__text {
+      flex-basis: 48%;
+      margin: 0;
+    }
+
+    .about__welcome {
+      flex-basis: 48%;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about {
+
+    .about__text {
+      flex-basis: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .about__welcome {
+      flex-basis: 100%;
+
+      h1 {
+        font-size: px-to-rem(32px);
+        padding-left: 25px;
+        line-height: 42px;
+        position: relative;
+  
+        &::before {
+          content: '';
+          width: 60px;
+          height: 4px;
+          display: block;
+          background-color: $primary;
+          position: absolute;
+          left: 25px;
+          top: -50px;
+        }
+
+        &::after {
+          content: url('../img/arrow-mobile.png');
+          position: absolute;
+          left: 50%;
+          bottom: -50px;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .about__addtext {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .about__video-wrap {
+      display: none;
+    }
+
+    .about__video-wrap-mobile {
+      display: block;
+      width: 100%;
+      margin: 60px 0 30px;
+
+      .about__video-mobile {
+        @include adaptive-video();
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about {
+
+    .about__wrap {
+      padding: 30px;
+    }
+
+    .about__welcome {
+
+      h1 {
+        font-size: px-to-rem(24px);
+        line-height: 36px;
+
+        &::before {
+          top: -30px;
+        }
+      }
+    }
+
+    .about__text {
+      
+      p {
+        font-size: px-to-rem(14px);
+        line-height: 28px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
+
+    .about__addtext {
+      
+      p {
+        font-size: px-to-rem(14px);
+        line-height: 28px;
+      }
+    }
+  }
+}
