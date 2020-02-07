@@ -1,6 +1,53 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // активируем wow.js
   new WOW().init()
+
+  // активируем before-after
+  new Cocoen(document.querySelector('.cocoen'));
+
+  // активируем слайдер starsGlide
+  const starsGlide = new Glide('.stars__glide', {
+    type: 'carousel',
+    gap: 10,
+    perView: 3,
+    animationDuration: 500,
+    animationTimingFunc: 'ease-in-out',
+    breakpoints: {
+      1100: {
+        perView: 2
+      },
+      750: {
+        perView: 1
+      }
+    }
+  })
+  
+  starsGlide.mount()
+
+  // активируем слайдер galleryGlide
+  const galleryGlide = new Glide('.gallery__glide', {
+    type: 'carousel',
+    gap: 0,
+    perView: 1,
+    autoplay: 6000,
+    hoverpause: true,
+    animationDuration: 500,
+    animationTimingFunc: 'ease-in-out'
+  })
+  
+  galleryGlide.mount()
+
+  // активируем слайдер testimonials
+  const testimonialsGlide = new Glide('.testimonials__glide', {
+    type: 'carousel',
+    perView: 3,
+    gap: 50,
+    animationDuration: 500,
+    animationTimingFunc: 'ease-in-out'
+  })
+  
+  testimonialsGlide.mount()
 
   // Функция для добавления анимации
   function animateCSS(element, animationName, callback) {

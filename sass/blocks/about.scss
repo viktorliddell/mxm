@@ -144,8 +144,8 @@
 
     .about__text {
       flex-basis: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
 
       button {
         display: block;
@@ -184,8 +184,8 @@
     }
 
     .about__addtext {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .about__video-wrap {
@@ -204,11 +204,30 @@
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .about {
+    .about__wrap {
+      padding-left: 0;
+      padding-right: 0;
+
+      .about__welcome {
+        h1 {
+          padding-left: 55px;
+
+          &::before {
+            left: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .about {
 
     .about__wrap {
-      padding: 30px;
+      padding-top: 30px;
       padding-bottom: 50px;
     }
 
@@ -220,6 +239,7 @@
 
         &::before {
           top: -30px;
+          left: 55px;
         }
       }
     }

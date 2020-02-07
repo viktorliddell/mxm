@@ -1,0 +1,218 @@
+.before-after {
+  background-color: $beforeAfterBg;
+
+  .before-after__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 0;
+
+    .before-after__info {
+      flex-basis: 40%;
+
+      .before-after__heading {
+
+        h2 {
+          font-size: px-to-rem(32px);
+          position: relative;
+          font-family: 'Raleway';
+          padding-left: 8px;
+
+          &::before {
+            content: '';
+            width: 55px;
+            height: 55px;
+            background-color: $primary;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+          }
+
+          span {
+            color: $white;
+            position: relative;
+            z-index: 2;
+            font-weight: 500;
+            margin-right: 15px;
+          }
+        }
+      }
+
+      .before-after__text {
+
+        p {
+          padding-right: 75px;
+          color: $textColor;
+          margin: 0;
+          text-align: justify;
+          line-height: 32px;
+          padding-top: 20px;
+          padding-bottom: 40px;
+        }
+
+        .before-after__link {
+          text-align: center;
+
+          a {
+            width: 50%;
+            background-color: $primary;
+            color: $white;
+            padding: 12px 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 50px;
+            transition-property: box-shadow;
+            transition-duration: 500ms;
+            
+
+            &:hover {
+              box-shadow: 5px 5px 1px darken($primary, 25%);
+            }
+          }
+        }
+      }
+    }
+
+    .before-after__img {
+      flex-basis: 60%;
+    }
+
+    .before-after__text-mobile {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .before-after {
+    .before-after__wrap {
+      padding: 75px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .before-after {
+    .before-after__wrap {
+      padding: 75px 0;
+
+      .before-after__info {
+        flex-basis: 100%;
+
+        .before-after__heading {
+
+          h2 {
+            width: 180px;
+            margin: 0 auto 50px;
+          }
+        }
+
+        .before-after__text {
+          display: none;
+        }
+      }
+  
+      .before-after__img {
+        flex-basis: 100%;
+        padding: 0 75px;
+      }
+
+      .before-after__text-mobile {
+        display: block;
+
+        p {
+          padding: 40px 100px;
+          color: $textColor;
+          margin: 0;
+          text-align: justify;
+          line-height: 32px;
+        }
+      }
+
+      .before-after__link-mobile {
+        text-align: center;
+
+        a {
+          background-color: $primary;
+          color: $white;
+          padding: 12px 50px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 583px) {
+  .before-after {
+    .before-after__wrap {
+      padding: 75px 0;
+
+      .before-after__img {
+        padding: 0;
+      }
+
+      .before-after__text-mobile {
+
+        p {
+          padding: 40px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .before-after {
+    .before-after__wrap {
+      .before-after__link-mobile {
+
+        a {
+          display: block;
+          margin: 0 auto;
+          width: 70%;
+          padding: 12px 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .before-after {
+    .before-after__wrap {
+
+      .before-after__info {
+
+        .before-after__heading {
+
+          h2 {
+            font-size: px-to-rem(24px);
+            width: 130px;
+
+            &::before {
+              width: 48px;
+              height: 48px;
+            }
+          }
+        }
+      }
+
+      .before-after__text-mobile {
+
+        p {
+          font-size: px-to-rem(14px);
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

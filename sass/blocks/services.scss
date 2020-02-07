@@ -1,5 +1,5 @@
 .services {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 
   .services__heading {
     margin-bottom: 50px;
@@ -136,6 +136,7 @@
 
 @media only screen and (max-width: 425px) {
   .services {
+    margin-bottom: 0;
 
     .services__gallery-mobile {
       display: block;
