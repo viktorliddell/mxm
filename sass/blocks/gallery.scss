@@ -1,5 +1,5 @@
 .gallery {
-  background: url('../img/gallery-bg.png') center no-repeat;
+  background: url('../img/gallery-bg.webp') center no-repeat;
   background-size: cover;
 
   .gallery__glide {
@@ -72,7 +72,7 @@
   }
 
   .glide__arrow--right {
-    background: url('../img/gallery-arrow-right.png') center no-repeat;
+    background: url('../img/gallery-arrow-right.webp') center no-repeat;
     border: none;
     box-shadow: none;
     width: 35px;
@@ -89,7 +89,7 @@
   }
 
   .glide__arrow--left {
-    background: url('../img/gallery-arrow-left.png') center no-repeat;
+    background: url('../img/gallery-arrow-left.webp') center no-repeat;
     border: none;
     box-shadow: none;
     width: 35px;
@@ -109,7 +109,7 @@
     display: none;
 
     .glide__bullet {
-      border: 2px solid #7B7B7B;
+      border: 2px solid $textColor;
       width: 15px;
       height: 15px;
     }

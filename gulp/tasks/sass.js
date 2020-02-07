@@ -6,7 +6,7 @@ module.exports = function () {
         .pipe($.gp.sass())
         .pipe($.gp.autoprefixer())
         .pipe($.gp.csso())
-        .pipe($.gp.rename('style.min.css'))
+        .pipe($.gp.rename('style.css'))
         .pipe($.gp.sourcemaps.write(''))
         .pipe($.gulp.dest('build/css'))
         .pipe($.browserSync.stream());

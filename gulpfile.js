@@ -7,6 +7,7 @@ global.$ = {
   del: require('del'),
   path: {
     config: require('./gulp/config.js'),
+    libs_js: './libs/**/*.js',
     js: './js/**/*.js',
     css: 'css/**/*.css'
   }

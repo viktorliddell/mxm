@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // активируем слайдер starsGlide
   const starsGlide = new Glide('.stars__glide', {
     type: 'carousel',
-    gap: 10,
+    gap: 15,
     perView: 3,
     animationDuration: 500,
     animationTimingFunc: 'ease-in-out',
@@ -43,6 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
     type: 'carousel',
     perView: 3,
     gap: 50,
+    breakpoints: {
+      1200: {
+        perView: 2
+      },
+      750: {
+        perView: 1
+      }
+    },
     animationDuration: 500,
     animationTimingFunc: 'ease-in-out'
   })
