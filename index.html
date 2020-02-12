@@ -2,83 +2,99 @@
 <html lang="ru">
 
 <head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<link rel="stylesheet" href="css/libs.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<title>MXM</title>
+	<title>Студия красоты MXM</title>
 </head>
 
 <body>
+	<div id="preloader">
+		<div class="contpre">
+			<img class="preloader__img" src="img/logo-white.webp" alt="Лоадер">
+		</div>
+	</div>
 	<div class="wrapper"></div>
-	<header class="header">
+	<div id="arrow-up">
+		<a class="smooth__link" href="#glavnaya">
+			<img src="img/arrow-up.webp" alt="Стрелка вверх">
+		</a>
+	</div>
+	<header id="glavnaya" class="header">
 		<div class="header__navbar">
 			<div class="header__wrap wrap">
 				<div class="header__logo">
-					<a id="linkLogo" href="#">
-						<img src="img/logo.webp" alt="MXM-logo">
+					<a class="smooth__link" id="linkLogo" href="#glavnaya">
+						<img src="img/logo.webp" alt="Студия красоты MXM">
 					</a>
 				</div>
 				<div class="header__menu">
 					<ul>
 						<li>
-							<a href="#">Главная</a>
+							<a class="smooth__link" href="#glavnaya">Главная</a>
 						</li>
 						<li>
-							<a href="#">О нас</a>
+							<a class="smooth__link" href="#o-nas">О нас</a>
 						</li>
 						<li>
-							<a href="#">Услуги</a>
+							<a class="smooth__link" href="#uslugi">Услуги</a>
 						</li>
 						<li>
-							<a href="#">До/После</a>
+							<a class="smooth__link" href="#do-posle">До/После</a>
 						</li>
 						<li>
-							<a href="#">Сотрудники</a>
+							<a class="smooth__link" href="#sotrudniki">Сотрудники</a>
 						</li>
 						<li>
-							<a href="#">Галерея</a>
+							<a class="smooth__link" href="#gallereya">Галерея</a>
 						</li>
 						<li>
-							<a href="#">Отзывы</a>
+							<a class="smooth__link" href="#otzivi">Отзывы</a>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a class="smooth__link" href="#kontakti">Контакты</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="header__navbar-mobile">
-			<a href="#">
-				<img src="img/logo.webp" alt="MXM-logo">
+			<a class="smooth__link" href="#glavnaya">
+				<img src="img/logo.webp" alt="Студия красоты MXM">
 			</a>
 		</div>
 		<div class="header__navbar-mobile-btn"></div>
 		<div class="header__contacts wrap">
 			<div class="header__contacts-container">
 				<div class="header__contacts-phone">
-					<img src="img/header-phone-icon.webp" alt=""><span>+7 911 920 78 48</span>
+					<img src="img/header-phone-icon.webp" alt="Телефон"><span>+7 911 920 78 48</span>
 				</div>
 				<div class="header__contacts-btn">
-					<a href="#">Записаться</a>
+					<a target="_blank" href="booking.html">Записаться</a>
 				</div>
 				<div class="header__contacts-socials">
 					<div class="header__contacts-whatsapp">
-						<a href="#">
-							<img src="img/whatsapp-header.webp" alt="">
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=79119207848">
+							<img src="img/whatsapp-header.webp" alt="Whatsapp">
 							<span>Whatsapp</span>
 						</a>
 					</div>
 					<div class="header__contacts-instagram">
-						<a href="#">
-							<img src="img/instagram-header.webp" alt="">
+						<a target="_blank" href="https://www.instagram.com/beautystudia_mxm/">
+							<img src="img/instagram-header.webp" alt="Instagram">
 							<span>Instagram</span>
 						</a>
 					</div>
 					<div class="header__contacts-vk">
-						<a href="#">
-							<img src="img/vk-header.webp" alt="">
+						<a target="_blank" href="https://vk.com/beautystudia_mxm">
+							<img src="img/vk-header.webp" alt="ВКонтакте">
 							<span>ВКонтакте</span>
 						</a>
 					</div>
@@ -87,61 +103,61 @@
 		</div>
 		<div class="header__contacts-mobile">
 			<div class="header__contacts-mobile-btn">
-				<a href="#">Записаться</a>
+				<a target="_blank" href="booking.html">Записаться</a>
 			</div>
 			<div class="header__contacts-socials-mobile">
 				<div class="header__contacts-phone-mobile">
-					<a href="#">
-						<img src="img/phone-header.webp" alt="">
+					<a href="tel:+79119207848">
+						<img src="img/phone-header.webp" alt="Телефон">
 						<span>Позвонить</span>
 					</a>
 				</div>
 				<div class="header__contacts-whatsapp-mobile">
-					<a href="#">
-						<img src="img/whatsapp-header.webp" alt="">
+					<a target="_blank" href="https://api.whatsapp.com/send?phone=79119207848">
+						<img src="img/whatsapp-header.webp" alt="Whatsapp">
 						<span>Whatsapp</span>
 					</a>
 				</div>
 				<div class="header__contacts-instagram-mobile">
-					<a href="#">
-						<img src="img/instagram-header.webp" alt="">
+					<a target="_blank" href="https://www.instagram.com/beautystudia_mxm/">
+						<img src="img/instagram-header.webp" alt="Instagram">
 						<span>Instagram</span>
 					</a>
 				</div>
 				<div class="header__contacts-vk-mobile">
-					<a href="#">
-						<img src="img/vk-header.webp" alt="">
+					<a target="_blank" href="https://vk.com/beautystudia_mxm">
+						<img src="img/vk-header.webp" alt="ВКонтакте">
 						<span>ВКонтакте</span>
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="header__drawer">
-			<img src="img/logo-white.webp" alt="">
+			<img src="img/logo-white.webp" alt="Студия красоты MXM">
 			<ul>
 				<li>
-					<a class="drawer__link" href="#">Главная</a>
+					<a class="drawer__link smooth__link" href="#glavnaya">Главная</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">О нас</a>
+					<a class="drawer__link smooth__link" href="#o-nas">О нас</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">Услуги</a>
+					<a class="drawer__link smooth__link" href="#uslugi">Услуги</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">До/После</a>
+					<a class="drawer__link smooth__link" href="#do-posle">До/После</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">Сотрудники</a>
+					<a class="drawer__link smooth__link" href="#sotrudniki">Сотрудники</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">Галерея</a>
+					<a class="drawer__link smooth__link" href="#gallereya">Галерея</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">Отзывы</a>
+					<a class="drawer__link smooth__link" href="#otzivi">Отзывы</a>
 				</li>
 				<li>
-					<a class="drawer__link" href="#">Контакты</a>
+					<a class="drawer__link smooth__link" href="#kontakti">Контакты</a>
 				</li>
 			</ul>
 		</div>
@@ -154,7 +170,7 @@
 		<p>#студиякрасотыmxm</p>
 	</div>
 
-	<div class="about">
+	<div id="o-nas" class="about">
 		<div class="about__wrap wrap">
 			<div class="about__top">
 				<div class="about__welcome">
@@ -165,7 +181,7 @@
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/mhZ5GU7TK1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div class="about__text wow fadeInDown">
+				<div class="about__text wow fadeInUp">
 					<p>Салон красоты — заведение, занимающееся косметическим обслуживанием мужчин и женщин. К этой же ветви
 						обслуживания относятся салоны причёсок и спа. Салоны красоты в отличие от них занимаются в основном работой
 						с лицами и телами людей...</p>
@@ -187,155 +203,155 @@
 		</div>
 	</div>
 
-	<div class="services">
+	<div id="uslugi" class="services">
 		<div class="services__wrap wrap">
 			<div class="services__heading wow fadeInUp">
 				<h2>Наши <strong>услуги</strong></h2>
 			</div>
 			<div class="services__gallery">
 				<div class="services__item wow fadeInLeft">
-					<img src="img/services-item-1.webp" alt="">
+					<img src="img/services-item-1.webp" alt="Женские стрижки">
 					<div class="services__info">
 						<p>Женские стрижки</p>
 						<div class="services__link">
-							<a href="#"><strong>500</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>500</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInLeft">
-					<img src="img/services-item-2.webp" alt="">
+					<img src="img/services-item-2.webp" alt="Карвинг">
 					<div class="services__info">
 						<p>Карвинг</p>
 						<div class="services__link">
-							<a href="#"><strong>1000</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>1000</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInDown">
-					<img src="img/services-item-3.webp" alt="">
+					<img src="img/services-item-3.webp" alt="Окрашивание">
 					<div class="services__info">
 						<p>Окрашивание</p>
 						<div class="services__link">
-							<a href="#"><strong>800</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>800</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInDown">
-					<img src="img/services-item-4.webp" alt="">
+					<img src="img/services-item-4.webp" alt="Мелирование">
 					<div class="services__info">
 						<p>Мелирование</p>
 						<div class="services__link">
-							<a href="#"><strong>1000</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>1000</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInLeft">
-					<img src="img/services-item-5.webp" alt="">
+					<img src="img/services-item-5.webp" alt="Прически">
 					<div class="services__info">
 						<p>Прически</p>
 						<div class="services__link">
-							<a href="#"><strong>1000</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>1000</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInLeft">
-					<img src="img/services-item-6.webp" alt="">
+					<img src="img/services-item-6.webp" alt="Тонирование">
 					<div class="services__info">
 						<p>Тонирование</p>
 						<div class="services__link">
-							<a href="#"><strong>700</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>700</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInRight">
-					<img src="img/services-item-7.webp" alt="">
+					<img src="img/services-item-7.webp" alt="Коррекция бровей">
 					<div class="services__info">
 						<p>Коррекция бровей</p>
 						<div class="services__link">
-							<a href="#"><strong>300</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>300</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInRight">
-					<img src="img/services-item-8.webp" alt="">
+					<img src="img/services-item-8.webp" alt="Мужская стрижка">
 					<div class="services__info">
 						<p>Мужская стрижка</p>
 						<div class="services__link">
-							<a href="#"><strong>500</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>500</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item services__item--decoration wow fadeInRight">
-					<img class="scissors" src="img/scissors.webp" alt="">
+					<img class="scissors" src="img/scissors.webp" alt="Прически">
 				</div>
 				<div class="services__item wow fadeInUp">
-					<img src="img/services-item-9.webp" alt="">
+					<img src="img/services-item-9.webp" alt="Маникюр">
 					<div class="services__info">
 						<p>Маникюр</p>
 						<div class="services__link">
-							<a href="#"><strong>500</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>500</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item wow fadeInUp">
-					<img src="img/services-item-10.webp" alt="">
+					<img src="img/services-item-10.webp" alt="Педикюр">
 					<div class="services__info">
 						<p>Педикюр</p>
 						<div class="services__link">
-							<a href="#"><strong>1000</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>1000</strong> руб</a>
 						</div>
 					</div>
 				</div>
 				<div class="services__item services__item--decoration wow fadeInLeft">
-					<img class="comb" src="img/comb.webp" alt="">
+					<img class="comb" src="img/comb.webp" alt="Укладки">
 				</div>
 			</div>
 			<div class="services__gallery-mobile">
-				<div class="services__item-mobile services__item-mobile-1 wow fadeInLeft">
-					<div class="services__item-mobile-wrapper">
+				<div class="services__item-mobile services__item-mobile-1">
+					<div class="services__item-mobile-wrapper wow fadeInLeft">
 						<p>Женские стрижки</p>
 						<div class="services__link-mobile">
-							<a href="#"><strong>500</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>500</strong> руб</a>
 						</div>
 					</div>
 				</div>
-				<div class="services__item-mobile services__item-mobile-2 wow fadeInRight">
-					<div class="services__item-mobile-wrapper">
+				<div class="services__item-mobile services__item-mobile-2">
+					<div class="services__item-mobile-wrapper wow fadeInRight">
 						<p>Карвинг</p>
 						<div class="services__link-mobile">
-							<a href="#"><strong>1000</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>1000</strong> руб</a>
 						</div>
 					</div>
 				</div>
-				<div class="services__item-mobile services__item-mobile-3 wow fadeInLeft">
-					<div class="services__item-mobile-wrapper">
+				<div class="services__item-mobile services__item-mobile-3">
+					<div class="services__item-mobile-wrapper wow fadeInLeft">
 						<p>Окрашивание</p>
 						<div class="services__link-mobile">
-							<a href="#"><strong>800</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>800</strong> руб</a>
 						</div>
 					</div>
 				</div>
-				<div class="services__item-mobile services__item-mobile-4 wow fadeInRight">
-					<div class="services__item-mobile-wrapper">
+				<div class="services__item-mobile services__item-mobile-4">
+					<div class="services__item-mobile-wrapper wow fadeInRight">
 						<p>Коррекция бровей</p>
 						<div class="services__link-mobile">
-							<a href="#"><strong>300</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>300</strong> руб</a>
 						</div>
 					</div>
 				</div>
-				<div class="services__item-mobile services__item-mobile-5 wow fadeInLeft">
-					<div class="services__item-mobile-wrapper">
+				<div class="services__item-mobile services__item-mobile-5">
+					<div class="services__item-mobile-wrapper wow fadeInLeft">
 						<p>Мужская стрижка</p>
 						<div class="services__link-mobile">
-							<a href="#"><strong>500</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>500</strong> руб</a>
 						</div>
 					</div>
 				</div>
-				<div class="services__item-mobile services__item-mobile-6 wow fadeInRight">
-					<div class="services__item-mobile-wrapper">
+				<div class="services__item-mobile services__item-mobile-6">
+					<div class="services__item-mobile-wrapper wow fadeInRight">
 						<p>Маникюр</p>
 						<div class="services__link-mobile">
-							<a href="#"><strong>500</strong> руб</a>
+							<a target="_blank" href="booking.html"><strong>500</strong> руб</a>
 						</div>
 					</div>
 				</div>
@@ -343,10 +359,10 @@
 		</div>
 	</div>
 
-	<div class="before-after">
+	<div id="do-posle" class="before-after">
 		<div class="before-after__wrap wrap">
 			<div class="before-after__info">
-				<div class="before-after__heading wow fadeInLeft">
+				<div class="before-after__heading">
 					<h2><span>До</span>После</h2>
 				</div>
 				<div class="before-after__text">
@@ -355,14 +371,14 @@
 						сосредоточиться. Lorem Ipsum
 						используют потому...</p>
 					<div class="before-after__link wow fadeInUp">
-						<a href="#">Записаться</a>
+						<a target="_blank" href="booking.html">Записаться</a>
 					</div>
 				</div>
 			</div>
-			<div class="before-after__img wow fadeInRight">
+			<div class="before-after__img">
 				<div class="cocoen">
-					<img src="img/before.webp" alt="">
-					<img src="img/after.webp" alt="">
+					<img src="img/before.webp" alt="Фото До">
+					<img src="img/after.webp" alt="Фото После">
 				</div>
 			</div>
 			<div class="before-after__text-mobile wow fadeInUp">
@@ -371,15 +387,15 @@
 					сосредоточиться. Lorem Ipsum
 					используют потому...</p>
 				<div class="before-after__link-mobile">
-					<a href="#">Записаться</a>
+					<a target="_blank" href="booking.html">Записаться</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="stars">
+	<div id="sotrudniki" class="stars">
 		<div class="stars__wrap wrap">
-			<div class="stars__heading wow bounceInRight">
+			<div class="stars__heading wow bounceInUp">
 				<h2>Наши <strong>звезды</strong></h2>
 			</div>
 			<div class="glide stars__glide">
@@ -387,7 +403,7 @@
 					<ul class="stars__slides glide__slides">
 						<li class="glide__slide">
 							<div class="stars__item wow fadeInUp">
-								<img src="img/stars-item-1.webp" alt="">
+								<img src="img/stars-item-1.webp" alt="Елизавета Птушкина">
 								<div class="stars__info stars__info--first">
 									<p class="stars__name">Елизавета Птушкина</p>
 									<p class="stars__profession">Топ-стилист</p>
@@ -396,7 +412,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="stars__item wow fadeInUp" data-wow-delay="250ms">
-								<img src="img/stars-item-2.webp" alt="">
+								<img src="img/stars-item-2.webp" alt="Анастасия Курина">
 								<div class="stars__info stars__info--second">
 									<p class="stars__name">Анастасия Курина</p>
 									<p class="stars__profession">Визажист-стилист</p>
@@ -405,7 +421,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="stars__item wow fadeInUp" data-wow-delay="500ms">
-								<img src="img/stars-item-3.webp" alt="">
+								<img src="img/stars-item-3.webp" alt="Светлана Василькова">
 								<div class="stars__info stars__info--third">
 									<p class="stars__name">Светлана Василькова</p>
 									<p class="stars__profession">Мастер по маникюру</p>
@@ -422,7 +438,7 @@
 		</div>
 	</div>
 
-	<div class="gallery">
+	<div id="gallereya" class="gallery">
 		<div class="gallery__wrap wrap">
 			<div class="gallery__heading wow fadeInDown">
 				<h2><span class="gallery__first-letters">Га</span><span class="gallery__last-letters">лерея</span></h2>
@@ -433,30 +449,30 @@
 						<li class="glide__slide">
 							<div class="gallery__slide">
 								<div class="gallery__image-left">
-									<img src="img/gallery-image-left.webp" alt="">
+									<img src="img/gallery-image-left.webp" alt="Работы">
 								</div>
 								<div class="gallery__image-right">
-									<img src="img/gallery-image-right.webp" alt="">
+									<img src="img/gallery-image-right.webp" alt="Работы">
 								</div>
 							</div>
 						</li>
 						<li class="glide__slide">
 							<div class="gallery__slide">
 								<div class="gallery__image-left">
-									<img src="img/gallery-image-left.webp" alt="">
+									<img src="img/gallery-image-left.webp" alt="Работы">
 								</div>
 								<div class="gallery__image-right">
-									<img src="img/gallery-image-right.webp" alt="">
+									<img src="img/gallery-image-right.webp" alt="Работы">
 								</div>
 							</div>
 						</li>
 						<li class="glide__slide">
 							<div class="gallery__slide">
 								<div class="gallery__image-left">
-									<img src="img/gallery-image-left.webp" alt="">
+									<img src="img/gallery-image-left.webp" alt="Работы">
 								</div>
 								<div class="gallery__image-right">
-									<img src="img/gallery-image-right.webp" alt="">
+									<img src="img/gallery-image-right.webp" alt="Работы">
 								</div>
 							</div>
 						</li>
@@ -475,7 +491,7 @@
 		</div>
 	</div>
 
-	<div class="testimonials">
+	<div id="otzivi" class="testimonials">
 		<div class="testimonials__wrap wrap">
 			<div class="testimonials__heading wow bounceInLeft">
 				<h2><strong>Отзывы</strong> о нас</h2>
@@ -490,7 +506,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -506,7 +522,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-2.webp" alt="">
+										<img src="img/testimonials-photo-2.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Алина Кабаева</p>
@@ -522,7 +538,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Алена Апина</p>
@@ -538,7 +554,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -554,7 +570,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -570,7 +586,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -586,7 +602,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -602,7 +618,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -618,7 +634,7 @@
 								</div>
 								<div class="testimonials__author">
 									<div class="testimonials__photo">
-										<img src="img/testimonials-photo-1.webp" alt="">
+										<img src="img/testimonials-photo-1.webp" alt="Отзывы">
 									</div>
 									<div class="testimonials__info">
 										<p>Анна Григорьева</p>
@@ -644,7 +660,7 @@
 		</div>
 	</div>
 
-	<div class="contacts">
+	<div id="kontakti" class="contacts">
 		<div class="contacts__wrap wrap">
 			<div class="contacts__heading-mobile wow fadeInLeft">
 				<h2><span class="contacts__mobile-first-letters">Ко</span><span class="contacts__mobile-last-letters">нтакты</span></h2>
@@ -666,7 +682,7 @@
 						<p>10:00 - 21:00</p>
 					</div>
 					<div class="contacts__btn">
-						<a href="#">Записаться</a>
+						<a target="_blank" href="booking.html">Записаться</a>
 					</div>
 				</div>
 			</div>
@@ -678,21 +694,21 @@
 
 	<footer class="footer">
 		<div class="footer__items">
-			<img class="footer__logo" src="img/logo.webp" alt="">
+			<img class="footer__logo" src="img/logo.webp" alt="Студия красоты MXM">
 			<p>Студия красоты MXM</p>
 			<div class="footer__links">
-				<a href="#" class="footer__whatsapp">
-					<img src="img/whatsapp-header.webp" alt="">
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=79119207848" class="footer__whatsapp">
+					<img src="img/whatsapp-header.webp" alt="Whatsapp">
 				</a>
-				<a href="#" class="footer__instagram">
-					<img src="img/instagram-header.webp" alt="">
+				<a target="_blank" href="https://www.instagram.com/beautystudia_mxm/" class="footer__instagram">
+					<img src="img/instagram-header.webp" alt="Instagram">
 				</a>
-				<a href="#" class="footer__vk">
-					<img src="img/vk-header.webp" alt="">
+				<a target="_blank" href="https://vk.com/beautystudia_mxm" class="footer__vk">
+					<img src="img/vk-header.webp" alt="ВКонтакте">
 				</a>
 			</div>
 			<div class="footer__madeby">
-				<a href="#">Made by probeautyseo</a>
+				<a class="smooth__link" href="#glavnaya">Made by probeautyseo</a>
 			</div>
 		</div>
 	</footer>

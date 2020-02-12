@@ -181,6 +181,48 @@
   }
 }
 
+#arrow-up {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  bottom: 25px;
+  right: 25px;
+
+  a {
+    display: block;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: linear-gradient(90deg, $primary, lighten($primary, 5%));
+  z-index: 30;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1000ms;
+}
+   
+.contpre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  img {
+    width: 150px;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 1140px) {
   .header {
 
@@ -472,5 +514,18 @@
     background-color: $black;
     opacity: .5;
     z-index: 5;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #arrow-up {
+  
+    a {
+  
+      img {
+        width: 40px;
+        height: auto;
+      }
+    }
   }
 }

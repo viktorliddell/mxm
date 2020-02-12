@@ -1,10 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = function() {
+
+  const preloader = document.getElementById('preloader')
+  animateCSS('.preloader__img', 'flipOutX', function() {
+    document.querySelector('.preloader__img').style.display = 'none'
+    preloader.style.opacity = 0
+    setTimeout(() => {
+      preloader.style.display = 'none'
+    }, 500)
+  })
 
   // активируем wow.js
   new WOW().init()
 
   // активируем before-after
-  new Cocoen(document.querySelector('.cocoen'));
+  new Cocoen(document.querySelector('.cocoen'))
 
   // активируем слайдер starsGlide
   const starsGlide = new Glide('.stars__glide', {
@@ -22,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   })
-  
+
   starsGlide.mount()
 
   // активируем слайдер galleryGlide
@@ -35,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animationDuration: 500,
     animationTimingFunc: 'ease-in-out'
   })
-  
+
   galleryGlide.mount()
 
   // активируем слайдер testimonials
@@ -54,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animationDuration: 500,
     animationTimingFunc: 'ease-in-out'
   })
-  
+
   testimonialsGlide.mount()
 
   // Функция для добавления анимации
@@ -63,22 +72,26 @@ document.addEventListener('DOMContentLoaded', () => {
     node.classList.add('animated', animationName)
 
     function handleAnimationEnd() {
-        node.classList.remove('animated', animationName)
-        node.removeEventListener('animationend', handleAnimationEnd)
+      node.classList.remove('animated', animationName)
+      node.removeEventListener('animationend', handleAnimationEnd)
 
-        if (typeof callback === 'function') callback()
+      if (typeof callback === 'function') callback()
     }
 
     node.addEventListener('animationend', handleAnimationEnd)
-}
+  }
 
-  // Header
+  // Выбор ноды
   const headerBtn = document.querySelector('.header__navbar-mobile-btn')
   const drawer = document.querySelector('.header__drawer')
   const wrapper = document.querySelector('.wrapper')
   const drawerLinks = document.querySelectorAll('.drawer__link')
   const addText = document.querySelector('.about__addtext')
+  const smoothLinks = document.querySelectorAll('.smooth__link')
+  const arrowUp = document.getElementById('arrow-up')
+  const arrowUpLink = arrowUp.querySelector('a')
 
+  // Показать дровер
   function addDrawer() {
     headerBtn.classList.add('header__navbar-mobile-btn--active')
     // Отображаем дровер
@@ -87,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.classList.add('wrapper--active')
   }
 
+  // Удалить дровер
   function removeDrawer() {
     // убираем активный класс
     headerBtn.classList.remove('header__navbar-mobile-btn--active')
@@ -140,4 +154,34 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-})
+  // Плавный переход по якорю
+  smoothLinks.forEach(element => {
+    element.addEventListener('click', function(event) {
+      event.preventDefault()
+
+      let href = this.getAttribute('href').substring(1)
+      const scrollTarget = document.getElementById(href)
+
+      const topOffset = 100
+      const elementPosition = scrollTarget.getBoundingClientRect().top
+      const offsetPosition = elementPosition - topOffset
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    })
+  })
+
+  // Добавление кнопки прокрутки наверх
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= 1000) {
+      if (arrowUp.style.display != 'block') {
+        arrowUp.style.display = 'block'
+        animateCSS('#arrow-up', 'fadeInRight')
+      }
+    } else {
+      arrowUp.style.display = 'none'
+    }
+  })
+}
