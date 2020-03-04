@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // скрываем прелоадер
-  setTimeout(function() {
+  window.onload = function () {
     const preloader = document.getElementById('preloader')
-    animateCSS('.preloader__img', 'flipOutX', function() {
+    animateCSS('.preloader__img', 'flipOutX', function () {
       document.querySelector('.preloader__img').style.display = 'none'
       preloader.style.opacity = 0
       setTimeout(() => {
         preloader.style.display = 'none'
       }, 500)
     })
-  }, 500)
+  }
     
   // активируем wow.js
   new WOW().init()
