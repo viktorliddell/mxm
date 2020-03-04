@@ -1,6 +1,6 @@
 module.exports = function () {
   $.gulp.task('images', function () {
-    return $.gulp.src('build/img/**/*.{png,jpg,svg}')
+    return $.gulp.src('build/img/**/*.{png,jpg,svg,webp}')
         .pipe($.gp.imagemin([
           $.gp.imagemin.mozjpeg({progressive: true}),
           $.imageminJpegRecompress({

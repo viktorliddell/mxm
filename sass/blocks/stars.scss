@@ -17,11 +17,13 @@
       position: relative;
 
       &::before {
-        content: url('../img/stars-icon.webp');
+        content: url('../img/stars-icon.svg');
         position: absolute;
         top: -75px;
         left: 50%;
         transform: translateX(-50%);
+        width: 55px;
+        height: auto;
       }
     }
   }
@@ -107,7 +109,7 @@
   }
 
   .glide__arrow--right {
-    background: url('../img/stars-arrow-right.webp') center no-repeat;
+    background: url('../img/stars-arrow-right.svg') center no-repeat;
     border: none;
     box-shadow: none;
     width: 35px;
@@ -123,7 +125,7 @@
   }
 
   .glide__arrow--left {
-    background: url('../img/stars-arrow-left.webp') center no-repeat;
+    background: url('../img/stars-arrow-left.svg') center no-repeat;
     border: none;
     box-shadow: none;
     width: 35px;

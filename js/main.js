@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // скрываем прелоадер
-  window.onload = function() {
+  setTimeout(function() {
     const preloader = document.getElementById('preloader')
     animateCSS('.preloader__img', 'flipOutX', function() {
       document.querySelector('.preloader__img').style.display = 'none'
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
         preloader.style.display = 'none'
       }, 500)
     })
-  }
-  
+  }, 500)
+    
   // активируем wow.js
   new WOW().init()
 
@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const addText = document.querySelector('.about__addtext')
   const smoothLinks = document.querySelectorAll('.smooth__link')
   const arrowUp = document.getElementById('arrow-up')
-  const arrowUpLink = arrowUp.querySelector('a')
 
   // Показать дровер
   function addDrawer() {
